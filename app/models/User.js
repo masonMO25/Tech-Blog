@@ -19,9 +19,14 @@ User.init(
     username: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        notEmpty: true,
-      },
+    },
+    twitter: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    github: {
+      type: DataTypes.STRING,
+      allowNull: true,
     },
     email: {
       type: DataTypes.STRING,
@@ -35,7 +40,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [8],
+        len: [4],
       },
     },
   },
@@ -53,6 +58,7 @@ User.init(
         return updatedUserData;
       },
     },
+
     sequelize,
     timestamps: false,
     freezeTableName: true,
