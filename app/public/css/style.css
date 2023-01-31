@@ -8,14 +8,13 @@ html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  color: rgb(74, 48, 23);
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: black;
   font-weight: bold;
-  transition: color 0.1s;
 }
 
 a:hover {
@@ -47,7 +46,7 @@ textarea,
 input {
   padding: 0.5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid blanchedalmond;
 }
 
 textarea:focus,
@@ -79,31 +78,16 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid blanchedalmond;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
-  background-color: #333;
-}
-
-header h1 {
-  font-size: 1em;
-  border: 2px outset #7d7d7d;
-  border-radius: 5px;
-  background-color: #ccc;
-  padding: 1.25rem;
 }
 
 main {
   flex: 1;
   padding: 2% 4%;
-}
-
-nav {
-  padding: 1.2rem;
-  text-align: right;
-  white-space: pre;
 }
 
 .btn-no-style {
@@ -137,30 +121,15 @@ nav {
   line-height: 150%;
 }
 
-.post .title {
-  font-style: italic;
-  font-size: 1.25rem;
-  color: #7d7d7d;
-}
-
 .post .title span {
   font-style: italic;
-  font-size: 0.8rem;
-  color: #7d7d7d;
+  font-size: 90%;
+  color: rgb(74, 48, 23);
 }
 
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
-}
-
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color 0.1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
 }
 
 .comment-form {
@@ -173,7 +142,7 @@ nav {
 }
 
 .comment:nth-child(odd) {
-  background-color: #f0f5ff;
+  background-color: #fff5eb;
 }
 
 .comment .meta {
@@ -182,28 +151,24 @@ nav {
   opacity: 0.6;
 }
 
-.new-post-form input,
-textarea {
-  width: 80%;
-}
-
 .edit-post-form {
   margin-bottom: 5%;
 }
 
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-  padding: 1.25rem;
-}
-
 footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid blanchedalmond;
   display: flex;
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+
+.card {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
 }
