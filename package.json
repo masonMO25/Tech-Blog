@@ -4,9 +4,9 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "dep-graph": "depcruise --exclude \"^node_modules\" --output-type dot src | dot -T svg > dependency-graph.svg",
-    "test": "vietest",
+    "test": "vitest",
     "start": "node server.js",
+    "watch": "nodemon server.js",
     "seed": "node app/seeds/index.js"
   },
   "repository": {
@@ -27,7 +27,7 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "prettier": "^2.7.1",
-    "vitest": "^0.28.1"
+    "vitest": "^0.28.3"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -38,6 +38,7 @@
     "express-session": "^1.17.3",
     "handlebars": "^4.7.7",
     "mysql2": "^3.1.0",
+    "nodemon": "^2.0.20",
     "sequelize": "^6.28.0"
   }
 }
