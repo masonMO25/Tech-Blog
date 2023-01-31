@@ -1,4 +1,3 @@
-// A function to log out a user
 async function logout() {
   const response = await fetch("/api/users/logout", {
     method: "post",
@@ -8,7 +7,7 @@ async function logout() {
   if (response.ok) {
     document.location.replace("/");
   } else {
-    alert(response.statusText);
+    console.alert(response.statusText);
   }
 }
 
