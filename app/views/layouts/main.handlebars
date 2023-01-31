@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MVC Tech Blog</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/app/public/css/style.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
@@ -20,10 +20,10 @@
         <nav class="navbar mt-2">
           <span><a href="/">Home</a></span>
           {{#if loggedIn}}
-            <a href="/dashboard">dashboard</a>
+            <a href="/dashboard">Dashboard</a>
             <button id="logout" class="btn-no-style">Logout</button>
           {{else}}
-            <a href="/login">login</a>
+            <a href="/login">Login</a>
           {{/if}}
         </nav>
       </header>
