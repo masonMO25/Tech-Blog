@@ -17,7 +17,7 @@ const postData = [
     title: "Model",
     post_text:
       "The data layer of the application. It is concerned with the structure of the database and the logic used to retrieve that data. We'll implement Sequelize as the ORM for querying the database.",
-    user_id: 2,
+    user_id: 4,
   },
   {
     title: "Controller",
