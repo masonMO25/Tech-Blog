@@ -4,6 +4,7 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
+    "deploy": "server.js",
     "test": "vitest",
     "start": "node server.js",
     "watch": "nodemon server.js",
