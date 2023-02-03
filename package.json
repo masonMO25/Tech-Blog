@@ -4,11 +4,12 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "deploy": "server.js",
     "test": "vitest",
     "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "node app/seeds/index.js"
+    "seed": "node app/seeds/index.js",
+    "predeploy": "node server.js",
+    "deploy": "gh-pages -b master -d build"
   },
   "repository": {
     "type": "git",
