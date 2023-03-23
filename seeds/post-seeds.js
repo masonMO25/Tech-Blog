@@ -9,7 +9,7 @@ const postdata = [
   {
     title: "Never stop believing in yourself!",
     post_url: "https://www.youtube.com/watch?v=1k8craCGpgs",
-    user_id: 5,
+    user_id: 4,
   },
   {
     title: "MVC to save the day",
