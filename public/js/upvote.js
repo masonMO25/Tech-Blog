@@ -1,27 +1,27 @@
-async function signupFormHandler(event) {
+async function upvoteClickHandler(event) {
   event.preventDefault();
-  const username = document.querySelector("#username-signup").value.trim();
-  const email = document.querySelector("#email-signup").value.trim();
-  const password = document.querySelector("#password-signup").value.trim();
-  if (username && email && password) {
-    const response = await fetch("/api/users", {
-      method: "post",
-      body: JSON.stringify({
-        username,
-        email,
-        password,
-      }),
-      headers: { "Content-Type": "application/json" },
-    });
-    if (response.ok) {
-      console.alert("Account created! Logging you in now.");
-      document.location.replace("/dashboard");
-    } else {
-      console.alert(response.statusText);
-    }
+
+  const id = window.location.toString().split("/")[
+    window.location.toString().split("/").length - 1
+  ];
+
+  const response = await fetch("/api/posts/upvote", {
+    method: "PUT",
+    body: JSON.stringify({
+      post_id: id,
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  if (response.ok) {
+    document.location.reload();
+  } else {
+    console.alert(response.statusText);
   }
 }
 
 document
-  .querySelector(".signup-form")
-  .addEventListener("submit", signupFormHandler);
+  .querySelector(".upvote-btn")
+  .addEventListener("click", upvoteClickHandler);

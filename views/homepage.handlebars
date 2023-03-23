@@ -1,8 +1,7 @@
-{{#each posts as |post|}}
-
-{{> postinfo post }}
-</div>
-
-{{else}}
-<h6 class="pb-4 has-text-centered is-italic">there are currently no posts</h6>
-{{/each}}
+<ul class="post-list">
+    {{#each posts as |post|}}
+    <li class="card" style="width: 58rem;">
+        {{> post-info post }}
+    </li>
+    {{/each}}
+</ul>

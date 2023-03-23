@@ -1,32 +1,33 @@
 const { Post } = require("../models");
 
-const postData = [
+const postdata = [
   {
-    title: "Model-View-Controller (MVC)",
-    post_content:
-      "MVC is an architectural pattern that structures a codebase in three distinct sections, according to a software design philosophy known as the separation of concerns.",
+    title: "A little pick-me-up for a bad day",
+    post_url: "https://www.youtube.com/watch?v=1k8craCGpgs",
+    user_id: 3,
+  },
+  {
+    title: "Never stop believing in yourself!",
+    post_url: "https://www.youtube.com/watch?v=1k8craCGpgs",
+    user_id: 5,
+  },
+  {
+    title: "MVC to save the day",
+    post_url: "https://www.youtube.com/watch?v=1k8craCGpgs",
+    user_id: 3,
+  },
+  {
+    title: "I hate you, I love you",
+    post_url: "https://www.youtube.com/watch?v=BiQIc7fG9pA",
     user_id: 1,
   },
   {
-    title: "View layer",
-    post_content:
-      "We can dynamically generate the HTML using a template engine. In implementing a template engine, we are separating the concern of client-side rendering from other aspects of the application.",
+    title: "Forever Young",
+    post_url: "https://www.youtube.com/watch?v=oNjQXmoxiQ8",
     user_id: 2,
-  },
-  {
-    title: "Model",
-    post_content:
-      "The data layer of the application. It is concerned with the structure of the database and the logic used to retrieve that data. We'll implement Sequelize as the ORM for querying the database.",
-    user_id: 4,
-  },
-  {
-    title: "Controller",
-    post_content:
-      "The intermediary between the View and the Model. The Controller handles input from the user, interacts with the Model to create, read, update, or delete data, and then returns the results of that query to the user via the View layer.",
-    user_id: 3,
   },
 ];
 
-const seedPosts = () => Post.bulkCreate(postData);
+const seedPosts = () => Post.bulkCreate(postdata);
 
 module.exports = seedPosts;
