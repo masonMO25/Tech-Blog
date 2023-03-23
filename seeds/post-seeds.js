@@ -3,27 +3,28 @@ const { Post } = require("../models");
 const postdata = [
   {
     title: "A little pick-me-up for a bad day",
-    post_url: "https://www.youtube.com/watch?v=1k8craCGpgs",
+    post_url: "https://www.youtube.com/watch?v=imhUxgC908o&list=LL&index=7",
     user_id: 3,
   },
   {
-    title: "Never stop believing in yourself!",
-    post_url: "https://www.youtube.com/watch?v=1k8craCGpgs",
+    title: "Check this track out",
+    post_url: "https://www.youtube.com/watch?v=QYhW28rtnok&list=LL&index=12",
     user_id: 4,
   },
   {
-    title: "MVC to save the day",
-    post_url: "https://www.youtube.com/watch?v=1k8craCGpgs",
+    title: "MVC post",
+    post_url: "https://www.youtube.com/watch?v=DUg2SWWK18I",
     user_id: 3,
   },
   {
-    title: "I hate you, I love you",
-    post_url: "https://www.youtube.com/watch?v=BiQIc7fG9pA",
+    title: "music for the soul",
+    post_url: "https://www.youtube.com/watch?v=mVi78cWhFmE&list=LL&index=13",
     user_id: 1,
   },
   {
-    title: "Forever Young",
-    post_url: "https://www.youtube.com/watch?v=oNjQXmoxiQ8",
+    title: "nice little video",
+    post_url:
+      "https://www.youtube.com/watch?v=mrHNSanmqQ4&list=LL&index=2&t=2s",
     user_id: 2,
   },
 ];
